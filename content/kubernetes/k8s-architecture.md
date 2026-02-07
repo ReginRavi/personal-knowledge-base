@@ -7,6 +7,44 @@ draft: false
 
 ![The Control Plane Node and Worker Node](../Images/The%20Control%20Plane%20Node%20and%20Worker%20Node.png)
 
+## The Control Plane Node: The Brain 🧠
+
+This is where the decision-making happens. Every Kubernetes cluster has one or more control plane nodes that oversee everything in the cluster.
+
+Here's how it all fits together:
+
+### API Server (api):
+
+Think of it as the front desk of Kubernetes. Every kubectl command or internal component interaction goes through the API server. It validates your requests and routes them to the right place.
+
+### Controller Manager (c-m):
+
+The automation genius. If your app's desired state (like 3 replicas) doesn’t match reality, the controller manager steps in to create, delete, or update resources.
+
+### Scheduler (sched):
+
+New pod? Cool. The scheduler finds the best worker node for it, considering factors like resources, affinity, and taints. It's all about optimal placement.
+
+### etcd:
+
+The brain's memory. This is a highly consistent key-value store that keeps track of everything in the cluster. If etcd is down, Kubernetes forgets the cluster's state.
+
+### kubelet on Control Plane:
+
+Just like on worker nodes, the kubelet on the control plane ensures containers running here are healthy and up-to-date.
+
+
+
+## Worker Node: The Muscles 💪
+
+While the control plane is busy planning and deciding, the worker nodes do the actual work.
+
+Here's what happens under the hood:
+
+kubelet:
+
+The node's manager. It takes orders from the API server
+
 ## Control Plane Components
 
 Kubernetes control plane consists of several key components that manage the cluster state:
