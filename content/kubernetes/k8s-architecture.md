@@ -5,6 +5,8 @@ tags: ["kubernetes", "architecture", "control-plane"]
 draft: false
 ---
 
+![The Control Plane Node and Worker Node](../Images/The%20Control%20Plane%20Node%20and%20Worker%20Node.png)
+
 ## Control Plane Components
 
 Kubernetes control plane consists of several key components that manage the cluster state:
