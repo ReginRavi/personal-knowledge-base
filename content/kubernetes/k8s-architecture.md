@@ -63,7 +63,7 @@ What if you want 5 copies of the same app running?
 What if you need to update your app without downtime?
 That’s where Deployments and ReplicaSets come in.
 
-![Deployments and ReplicaSets](Images/Deployments%20and%20Replicasets.png)
+![Deployments and ReplicaSets](../Images/Deployments%20and%20Replicasets.png)
 
 What’s a ReplicaSet?
 
